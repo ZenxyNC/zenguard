@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/zenguard/static/css/main.e6c13ad2.css",
+    "main.js": "/zenguard/static/js/main.e4ddbbcb.js",
+    "static/js/563.741460e7.chunk.js": "/zenguard/static/js/563.741460e7.chunk.js",
+    "index.html": "/zenguard/index.html",
+    "main.e6c13ad2.css.map": "/zenguard/static/css/main.e6c13ad2.css.map",
+    "main.e4ddbbcb.js.map": "/zenguard/static/js/main.e4ddbbcb.js.map",
+    "563.741460e7.chunk.js.map": "/zenguard/static/js/563.741460e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.e4ddbbcb.js"
+  ]
+}
