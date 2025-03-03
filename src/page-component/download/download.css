@@ -1,0 +1,563 @@
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+#head-title-download {
+  z-index: 1001;
+  font-family: 'GSansBlack';
+  font-size: 35px;
+  color: #F5F5F5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  background: #007AFF;
+  background: #F5F5F5;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  text-align: center;
+}
+
+.--screen-viewported {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+  top: 0px;
+  left: 0px;
+  z-index: 100;
+}
+
+#cardPack-wrapper {
+  width: 100%;
+  height: 70vh;
+  max-height: 500px;
+  position: relative;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  overflow-x: auto;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: start;
+  padding: 0 20px;
+  white-space: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.cardPack-title {
+  font-size: 30px;
+  font-family: 'GSansBold';
+  color: rgb(245, 245, 245, 0.6);
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+}
+
+.cardPack-price {
+  font-size: 75px;
+  font-family: 'NexaBold';
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cardPack-annual {
+  font-size: 20px;
+  font-family: 'GSansRegular';
+  color: rgb(245, 245, 245);
+  position: absolute;
+  top: 87px;
+  right: 30px;
+}
+.cardPack-description {
+  width: calc(100% - 50px);
+  position: absolute;
+  background-color: transparent;
+  font-family: 'GSansRegular';
+  color: #F5F5F5;
+  white-space: wrap;
+  left: 50%;
+  transform: translate(-50%, -35%);
+  top: 35%;
+  font-size: 20px;
+}
+.cardPack-AITag {
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 170px
+}
+
+.AITag-name {
+  z-index: 1000;
+  position: absolute;
+  width: 160px;
+  position: absolute;
+  height: 40px;
+  place-content: center;
+  text-align: center;
+  border-radius: 10px;
+  font-family: 'GSansBold';
+  background: #007AFF;
+  background: radial-gradient(ellipse farthest-corner at top left, #007AFF 40%, #5628EF 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 18px;
+}
+.AITag-box {
+  width: 160px;
+  height: 40px;
+  position: absolute;
+  background-color: rgb(33, 40, 50, 0.6);
+  z-index: 0;
+  border-radius: 10px;
+  backdrop-filter: blur(50px);
+}
+
+#card-std {
+  height: 100%;
+  width: 35vh;
+  flex-shrink: 0;
+  background-image: url('../../resource/Card-Standard.svg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  margin-left: 50px;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  position: relative;
+  user-select: none;
+}
+
+#card-prem {
+  height: 100%;
+  width: 35vh;
+  flex-shrink: 0;
+  background-image: url('../../resource/Card-Prem.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  position: relative;
+  user-select: none;
+}
+
+#card-pro {
+  height: 100%;
+  width: 35vh;
+  flex-shrink: 0;
+  background-image: url('../../resource/Card-Pro.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  margin-right: 50px;
+  scroll-snap-align: center;
+  scroll-behavior: smooth;
+  position: relative;
+  user-select: none;
+}
+#head-desc {
+  display: none;
+}
+#checkout {
+  display: none;
+}
+
+#cardDetails-wrapper {
+  width: 100%;
+  height: 70vh;
+  background-color: transparent;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+#cardCO-std {
+  height: 90%;
+  width: 40vh;
+  background-image: url('../../resource/Card-Standard.svg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  user-select: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#cardCO-prem {
+  height: 90%;
+  width: 40vh;
+  background-image: url('../../resource/Card-Prem.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  user-select: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+#cardCO-pro {
+  height: 90%;
+  width: 40vh;
+  background-image: url('../../resource/Card-Pro.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  user-select: none;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.cardCO.show {
+  display: block;
+}
+.cardCO.hide {
+  display: none;
+}
+#itemCO-title-desktop {
+  display: none
+}
+#itemCO-desc-desktop {
+  display: none
+}
+#checkOut-hover {
+  display: none;
+}
+
+#itemCO-mobile {
+  width: 40vh;
+  height: 50px;
+  background-color: transparent;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  top: 10px;
+  border-radius: 10px;
+  transition: 0.5s;
+  display: block;
+}
+
+#checkOut-mobile-button {
+  width: calc(100% - 60px);
+  height: 50px;
+  background-color: #007AFF;
+  border-radius: 10px;
+  position: absolute;
+  border: none;
+  color: #F5F5F5;
+  font-family: 'GSansBold';
+  font-size: 20px
+}
+
+#checkOut-mobile-info {
+  width: 50px;
+  height: 50px;
+  background-color: #31475e;
+  border-radius: 10px;
+  position: absolute;
+  right: 0px;
+  border: none;
+}
+#checkOut-mobile-info > .img {
+  background-image: url('../../resource/information-circle-outline.svg');
+  background-position: center;
+  background-size: 35px;
+  background-repeat: no-repeat;
+  filter: invert(1);
+  width: 100%;
+  height: 100%
+}
+#checkOut-mobile-detailinfo {
+  display: block;
+  position: absolute;
+  height: calc(90% - 30px);
+  width: calc(40vh - 30px);
+  background-color: rgb(33, 40, 50, 0.6);
+  top: 0px;
+  border-radius: 10px;
+  backdrop-filter: blur(20px);
+  color: rgb(245, 245, 245, 0.8);
+  font-size: 16px;
+  font-family: 'GSansMedium';
+  transition: 0.5s;
+  opacity: 0;
+  user-select: none;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+}
+
+@media screen and (min-width: 1170px) {
+  #head-title-download {
+    z-index: 1001;
+    font-family: 'GSansBlack';
+    font-size: 80px;
+    color: #F5F5F5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100px;
+    color: #F5F5F5;
+    width: 100%;
+    text-align: center;
+  }
+  #cardPack-wrapper {
+    width: 80%;
+    height: 70vh;
+    background-color: transparent;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    max-height: unset;
+    max-width: unset;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    padding: 0 20px;
+    white-space: nowrap;
+  }
+  #card-std {
+    height: 90%;
+    width: 40vh;
+    flex-shrink: 0;
+    background-image: url('../../resource/Card-Standard.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-left: 50px
+  }
+  
+  #card-prem {
+    height: 90%;
+    width: 40vh;
+    flex-shrink: 0;
+    background-image: url('../../resource/Card-Prem.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+  }
+  
+  #card-pro {
+    height: 90%;
+    width: 40vh;
+    flex-shrink: 0;
+    background-image: url('../../resource/Card-Pro.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    margin-right: 50px;
+  }
+  .cardPack-title {
+    font-size: 35px;
+    font-family: 'GSansBold';
+    color: rgb(245, 245, 245, 0.6);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .cardPack-price {
+    font-size: 100px;
+    font-family: 'NexaBold';
+    color: rgb(245, 245, 245);
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .cardPack-annual {
+    font-size: 20px;
+    font-family: 'GSansRegular';
+    color: rgb(245, 245, 245);
+    position: absolute;
+    top: 120px;
+    right: 55px;
+  }
+  .cardPack-description {
+    width: calc(100% - 100px);
+    position: absolute;
+    background-color: transparent;
+    font-family: 'GSansRegular';
+    color: #F5F5F5;
+    white-space: wrap;
+    left: 50%;
+    transform: translate(-50%, -35%);
+    top: 35%;
+    font-size: 25px;
+  }
+  .cardPack-AITag {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 170px
+  }
+  .AITag-name {
+    z-index: 1000;
+    position: absolute;
+    width: 160px;
+    position: absolute;
+    height: 40px;
+    place-content: center;
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'GSansBold';
+    background: #007AFF;
+    background: radial-gradient(ellipse farthest-corner at top left, #007AFF 40%, #5628EF 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+  }
+  .AITag-box {
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    background-color: rgb(33, 40, 50, 0.6);
+    z-index: 0;
+    border-radius: 10px;
+    backdrop-filter: blur(50px);
+  }
+
+  #head-desc {
+    display: block;
+    color: #007AFF;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 185px;
+    position: absolute;
+    transition: 0.8s;
+    font-family: 'GSansBold';
+    font-size: 25px
+  }
+  
+  #cardDetails-wrapper {
+    width: 45%;
+    height: 70vh;
+    background-color: transparent;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    min-width: 800px;
+    max-width: 1000px
+  }
+  
+  #cardCO-std {
+    height: 90%;
+    width: 40vh;
+    background-image: url('../../resource/Card-Standard.svg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    user-select: none;
+    left: unset;
+    transform: unset;
+  }
+  #cardCO-prem {
+    height: 90%;
+    width: 40vh;
+    background-image: url('../../resource/Card-Prem.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    user-select: none;
+    left: unset;
+    transform: unset;
+  }
+  #cardCO-pro {
+    height: 90%;
+    width: 40vh;
+    background-image: url('../../resource/Card-Pro.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    position: relative;
+    user-select: none;
+    left: unset;
+    transform: unset;
+  }
+
+  #itemCO-title-desktop {
+    display: block;
+    color: #F5F5F5;
+    position: absolute;
+    font-family: 'GSansBlack';
+    top: 0px;
+    left: calc(40vh + 30px);
+    font-size: 45px;
+    width: calc(100% - 40vh - 30px)
+  }
+  #itemCO-desc-desktop {
+    display: block;
+    font-size: 23px;
+    font-family: 'GSansRegular';
+    color: #F5F5F5;
+    position: absolute;
+    top: 140px;
+    left: calc(40vh + 30px);
+    width: calc(100% - 40vh - 30px);
+  }
+  #checkOut-hover {
+    display: block;
+    position: absolute;
+    height: 90%;
+    width: 40vh;
+    background-color: rgb(33, 40, 50, 0.1);
+    top: 0px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(0px);
+    color: rgb(245, 245, 245, 0.8);
+    font-size: 20px;
+    font-family: 'GSansBold';
+    transition: 0.5s;
+    opacity: 0;
+    user-select: none;
+  }
+  #checkOut-hover:hover {
+    display: block;
+    position: absolute;
+    height: 90%;
+    width: 40vh;
+    background-color: rgb(33, 40, 50, 0.1);
+    top: 0px;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    color: rgb(245, 245, 245, 0.8);
+    font-size: 20px;
+    font-family: 'GSansBold';
+    transition: 0.3s;
+    opacity: 1;
+    user-select: none;
+  }
+  #itemCO-mobile {
+    display: none;
+  }
+}

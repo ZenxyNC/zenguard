@@ -1,0 +1,197 @@
+
+
+#navbar-mainBody {
+  width: calc(100% - 100px);
+  height: 60px;
+  background-color: rgb(33, 40, 50, 0.5);
+  position: fixed;
+  z-index: 999999;
+  backdrop-filter: blur(50px);
+  border-radius: 100px;
+  box-shadow: 0px 0px 30px -10px #31475e;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#navbar-innerWrapper-download {
+  width: 150px;
+  height: calc(100% - 20px);
+  position: relative;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+
+#navbar-image {
+  width: 40px;
+}
+#navbar-initial {
+  font-family: 'GSansBlack';
+  color: #F5F5F5;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50px;
+  transform: translateY(-50%);
+}
+#navbar-menu {
+  width: 50px;
+  height: 50px;
+  border-radius: 100px;
+  background-color: rgb(33, 40, 50, 1);
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-image: url('../../../resource/menu-dot.svg');
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: center;
+  cursor: pointer;
+}
+#navbar-menu-desktop{
+  display: none;
+}
+
+#navbar-menu-mobile {
+  width: calc(100% - 100px);
+  aspect-ratio: 1/1;
+  background-color: rgb(33, 40, 50, 0.5);
+  position: fixed;
+  z-index: 999999;
+  border-radius: 30px;
+  box-shadow: 0px 0px 30px -10px #31475e;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 280px;
+  transition: 0.8s;
+  top: -100%;
+  backdrop-filter: blur(50px);
+
+}
+.--mobileMenu-child {
+  width: calc(100% - 20px);
+  height: 50px;
+  background-color: rgb(33, 40, 50, 0);
+  position: relative;
+  left: 10px;
+  place-content: center;
+  top: 10px;
+  margin-bottom: 10px;
+  font-family: 'GSansMedium';
+  color: rgb(245, 245, 245, 0.5);
+  font-size: 19px;
+  transition: 0.5s;
+}
+.--mobileMenu-child.selected {
+  width: calc(100% - 30px);
+  height: 50px;
+  background-color: rgb(33, 40, 50, 0);
+  position: relative;
+  left: 15px;
+  place-content: center;
+  top: 10px;
+  margin-bottom: 10px;
+  font-family: 'GSansMedium';
+  color: #F5F5F5;
+  font-size: 19px;
+  transition: 0.5s;
+}
+.--mobileMenu-child-report {
+  width: calc(100% - 20px);
+  height: 50px;
+  background-color: rgb(245, 245, 245, 0.7);
+  position: absolute;
+  left: 10px;
+  place-content: center;
+  text-align: center;
+  bottom: 0px;
+  margin-bottom: 10px;
+  font-family: 'GSansMedium';
+  color: rgb(33, 40, 50);
+  font-size: 19px;
+  transition: 0.5s;
+  border-radius: 20px
+}
+
+@media screen and (min-width: 1170px) {
+  #navbar-mainBody {
+    width: 100%;
+    height: 70px;
+    background-color: rgb(33, 40, 50, 0.5);
+    position: fixed;
+    z-index: 999999;
+    backdrop-filter: blur(50px);
+    border-radius: 0px;
+    box-shadow: 0px 0px 30px -10px #31475e;
+    top: 0px;
+    left: 0px;
+    transform: unset;
+  }
+
+  #navbar-innerWrapper-download {
+    width: 210px;
+    height: calc(100% - 20px);
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: transparent;
+    max-width: 900px;
+  }
+  
+  #navbar-image {
+    width: 50px;
+  }
+  #navbar-initial {
+    font-family: 'GSansBlack';
+    color: #F5F5F5;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 60px;
+    transform: translateY(-50%);
+  }
+  #navbar-menu {
+    display: none;
+  }
+  #navbar-menu-desktop{
+    width: max-content;
+    height: 100%;
+    position: absolute;
+    background-color: transparent;
+    place-content: center;
+    top: 0px;
+    right: 0px;
+    display: block;
+  }
+  .--desktopMenu-child {
+    margin-right: 15px;
+    font-family: 'GSansMedium';
+    font-size: 19px;
+    color: rgb(245, 245, 245, 0.5);
+    cursor: pointer;
+    transition: 0.5s
+  }
+  .--desktopMenu-child.selected {
+    margin-right: 15px;
+    font-family: 'GSansMedium';
+    font-size: 19px;
+    color: rgb(245, 245, 245, 1)
+  }
+  .--desktopMenu-child-report {
+    margin-right: 15px;
+    font-family: 'GSansBold';
+    font-size: 19px;
+    color: rgb(33, 40, 50);
+    cursor: pointer;
+    transition: 0.5s;
+    background-color: #F5F5F5;
+    padding: 5px 15px 5px 15px;
+    border-radius: 100px;
+  }
+  #navbar-menu-mobile {
+    display: none;
+  }
+}

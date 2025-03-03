@@ -1,0 +1,415 @@
+html {
+  background-color: #212832;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#--background {
+  width: calc(100% - 0px);
+  height: 100%;
+  background-image: url('../../resource/doodad\ \(4\).png');
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-position: center;
+  z-index: 0;
+  opacity: 0.3;
+}
+#--background-bubble {
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 999
+}
+.bgBubble {
+  width: 300px;
+  height: 300px;
+  filter: blur(250px);
+  position: relative;
+}
+.--007aff {
+  background-color: #007aff;
+  top: -100px;
+  left: -100px
+}
+.--4E22E0 {
+  width: 220px;
+  height: 220px;
+  filter: blur(100px);
+  background-color: #4E22E0;
+  top: 40px;
+  right: -250px
+}
+.--0051FF {
+  background-color: #0051FF;
+  top: 100px;
+  left: -100px;
+  width: 400px;
+  height: 400px;
+  filter: blur(230px);
+  opacity: 0.8
+}
+.--11A69D {
+  background-color: #11A69D;
+  top: 0px;
+  right: -100px;
+  width: 500px;
+  height: 500px;
+  filter: blur(200px);
+  border-radius: 100px;
+  opacity: 0.7
+}
+#head-text {
+  font-family: 'GSansMedium';
+  color: rgb(245, 245, 245, 0.6);
+  width: calc(100% + 150%);
+  font-size: 17px;
+  margin-top: 80px;
+  position: relative;
+  left: -130px
+}
+#headText-wrapper {
+  width: 100%;
+  overflow: hidden;
+  z-index: 995
+}
+
+#head-title {
+  z-index: 1001;
+  font-family: 'GSansBlack';
+  font-size: 35px;
+  color: #F5F5F5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 200px;
+  background: #007AFF;
+  background: radial-gradient(ellipse farthest-corner at top left, #007AFF 40%, #5628EF 90%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#head-description{
+  z-index: 1001;
+  font-family: 'GSansMedium';
+  font-size: 17px;
+  color: #F5F5F5;
+  text-align: center;
+  width: calc(100% - 50px);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 250px
+}
+.--container {
+  width: 100%;
+  height: max-content;
+  min-height: 200px;
+  z-index: 1001;
+  background-color: rgb(33, 40, 50, 0.3);
+  padding: 10px 15px 20px 15px;
+  border-radius: 15px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(50px);
+  margin-bottom: 10px;
+  overflow: hidden;
+}
+.--container-title {
+  z-index: 1001;
+  font-family: 'GSansBlack';
+  font-size: 35px;
+  color: #F5F5F5;
+  position: relative;
+  background: #007AFF;
+  background: radial-gradient(circle farthest-corner at top left, #007AFF 30%, #13CABF 60%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.--container-date {
+  z-index: 1001;
+  font-family: 'GSansMedium';
+  font-size: 14px;
+  color: #F5F5F5;
+  position: relative;
+  color: rgb(245, 245, 245, 0.6)
+}
+.--container-description {
+  z-index: 1001;
+  font-family: 'GSansMedium';
+  font-size: 15px;
+  color: #F5F5F5;
+  position: relative;
+  color: rgb(245, 245, 245);
+  top: 15px;
+  padding: 0px 0px 15px 0px
+}
+.--container-desc-extender {
+  height: 10px
+}
+.--container-image {
+  width: 350px;
+  height: 350px;
+  position: absolute;
+  bottom: -120px;
+  right: -120px;
+  z-index: -10
+}
+.--container-button {
+  width: calc(50% - 100px);
+  height: 50px;
+  background-color: rgb(33, 40, 50, 1);
+  border: none;
+  color: #F5F5F5;
+  font-family: 'GSansBlack';
+  font-size: 16px;
+  box-shadow: 0px 0px 30px -20px #31475E;
+  border-radius: 10px;
+  min-width: 200px;
+  margin-top: 10px;
+  backdrop-filter: blur(100px);
+  z-index: 100;
+}
+
+#mainContent {
+  position: absolute;
+  top: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 100px);
+  z-index: 10001
+}
+
+#arrow-desktop{
+  display: none;
+}
+
+#ZenGuard-Invitation {
+  overflow: hidden;
+  height: 250px
+}
+#ZenGuard-Invitation > .--container-description {
+  width: 100%
+}
+#Utilities {
+  background-color: rgb(245, 245, 245, 0);
+  backdrop-filter: none;
+  height: 500px;
+  position: absolute;
+  padding-top: 0px;
+}
+
+#Utilities > .--container {
+  width: 100%;
+}
+#Installation {
+  top: -50px;
+  position: relative;
+}
+
+.--Installation-button {
+  background: rgb(0,122,255);
+  background: linear-gradient(43deg, rgba(0,122,255,1) 40%, rgba(95,54,229,1) 100%);
+}
+
+@media screen and (min-width: 1170px) {
+  .bgBubble {
+    width: 700px;
+    height: 700px;
+    filter: blur(400px);
+    position: absolute;
+  }
+  .--007aff {
+    background-color: #007aff;
+    top: -200px;
+    left: -200px
+  }
+  .--0051FF {
+    background-color: #0051FF;
+    top: 1600px;
+    left: 400px;
+    width: 800px;
+    height: 800px;
+    filter: blur(300px);
+    opacity: 0.6
+  }
+  .--11A69D {
+    background-color: #11A69D;
+    top: 1200px;
+    right: 0px;
+    width: 700px;
+    height: 700px;
+    filter: blur(380px);
+    opacity: 1
+  }
+  .--4E22E0 {
+    width: 500px;
+    height: 500px;
+    filter: blur(270px);
+    background-color: #4E22E0;
+    top: 500px;
+    right: 0px
+  }
+  #head-text {
+    font-family: 'GSansMedium';
+    color: rgb(245, 245, 245, 0.6);
+    width: calc(100% + 150%);
+    font-size: 37px;
+    margin-top: 80px;
+    position: relative;
+    left: -20px;
+    width: calc(100% + 300px)
+  }
+  #headText-wrapper {
+    width: 100%;
+    overflow: hidden;
+    z-index: 995
+  }
+  
+  #head-title {
+    z-index: 1001;
+    font-family: 'GSansBlack';
+    font-size: 70px;
+    color: #F5F5F5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+    background: #007AFF;
+    background: radial-gradient(ellipse farthest-corner at top left, #007AFF 40%, #5628EF 90%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #head-description{
+    z-index: 1001;
+    font-family: 'GSansMedium';
+    font-size: 23px;
+    color: #F5F5F5;
+    text-align: center;
+    width: calc(100% - 50px);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 340px;
+    max-width: 700px
+  }
+  .--container {
+    width: 100%;
+    height: max-content;
+    min-height: 400px;
+    z-index: 1001;
+    background-color: rgb(33, 40, 50, 0.3);
+    padding: 10px 15px 20px 15px;
+    border-radius: 15px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    backdrop-filter: blur(50px);
+    margin-bottom: 20px
+  }
+  .--container-title {
+    z-index: 1001;
+    font-family: 'GSansBlack';
+    font-size: 45px;
+    color: #F5F5F5;
+    position: relative;
+    background: #007AFF;
+    background: radial-gradient(circle farthest-corner at top left, #007AFF 20%, #13CABF 40%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .--container-date {
+    z-index: 1001;
+    font-family: 'GSansMedium';
+    font-size: 20px;
+    color: #F5F5F5;
+    position: relative;
+    color: rgb(245, 245, 245, 0.6)
+  }
+  .--container-description {
+    z-index: 1001;
+    font-family: 'GSansRegular';
+    font-size: 23px;
+    color: #F5F5F5;
+    position: relative;
+    color: rgb(245, 245, 245);
+    top: 15px
+  }
+
+  .--container-desc-extender {
+    height: 30px
+  }
+  
+  #mainContent {
+    position: absolute;
+    top: calc(100% + 100px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 100px);
+    max-width: 800px;
+    z-index: 1001
+  }
+  #arrow-desktop{
+    width: 60px;
+    position: absolute;
+    bottom: 40px;
+    left: 50.15%;
+    transform: translateX(-50%);
+    display: block;
+  }
+  .--container-image {
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    top: -70px;
+    right: -200px;
+    z-index: -10
+  }
+  .--container-button {
+    width: calc(50% - 100px);
+    height: 60px;
+    background-color: rgb(33, 40, 50, 1);
+    border: none;
+    color: #F5F5F5;
+    font-family: 'GSansBlack';
+    font-size: 20px;
+    box-shadow: 0px 0px 30px -20px #31475E;
+    border-radius: 10px;
+    min-width: 200px;
+    margin-top: 20px;
+    backdrop-filter: blur(50px);
+    z-index: 100;
+    cursor: pointer;
+  }
+  #ZenGuard-Invitation > .--container-description {
+    width: 53%
+  }
+  #Utilities {
+    background-color: rgb(245, 245, 245, 0);
+    backdrop-filter: none;
+    height: 500px;
+    position: absolute;
+    padding: 0px;
+    width: calc(100% + 30px)
+  }
+  
+  #Utilities > .--container {
+    width: calc(50% - 40px);
+    left: unset;
+    transform: unset;
+  }
+  #Installation {
+    position: absolute;
+    left: 0px;
+    transform: unset;
+  }
+  #tutorial {
+    position: absolute;
+    left: unset;
+    right: 0px;
+    transform: unset;
+    top: 0px
+  }
+}

@@ -1,0 +1,214 @@
+
+#mainBody-checkout {
+  position: fixed;
+  width: 100vw;
+  height: calc(100vh);
+  background-color: rgb(33, 40, 50, 0.4);
+  backdrop-filter: blur(170px);
+  bottom: -100%;
+  left: 0px;
+  color: white;
+  z-index: 999999;
+  opacity: 0.5;
+  transition: 0.5s;
+  user-select: none;
+}
+#head-title-checkout {
+  z-index: 1001;
+  font-family: 'GSansBlack';
+  font-size: 35px;
+  color: #F5F5F5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 120px;
+  color: #F5F5F5;
+  width: 100%;
+  text-align: center;
+}
+#input-ZenID {
+  width: calc(100% - 15px);
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(33, 40, 50, 0.6);
+  border: none;
+  padding-left: 15px;
+  color: #F5F5F5;
+  font-family: 'GSansMedium';
+  outline: none;
+  font-size: 19px;
+  margin-bottom: 10px
+}
+#input-Verif {
+  width: calc(100% - 15px);
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(33, 40, 50, 0.6);
+  border: none;
+  padding-left: 15px;
+  color: #F5F5F5;
+  font-family: 'GSansMedium';
+  outline: none;
+  font-size: 19px;
+}
+#getVerifCode {
+  height: 30px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  font-size: 17px;
+  color: #007AFF;
+  font-family: 'GSansMedium';
+  width: 120px;
+  right: -10px;
+  margin-top: 5px
+}
+
+#userdata-input-download {
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 300px;
+}
+#actionArea {
+  width: calc(20vw + 15px);
+  height: 50px;
+  background-color: rgb(33, 40, 50, 0);
+  margin-top: 70px
+}
+
+#actionArea-cancel {
+  width: calc(50% - 5px);
+  height: 50px;
+  background-color: #FF393D;
+  position: absolute;
+  border-radius: 10px;
+  left: 0px;
+  border: none;
+  color: #F5F5F5;
+  font-family: 'GSansBold';
+  font-size: 16px;
+  cursor: pointer
+}
+#actionArea-submit {
+  width: calc(50% - 5px);
+  height: 50px;
+  background-color: #007AFF;
+  position: absolute;
+  border-radius: 10px;
+  right: 0px;
+  border: none;
+  color: #F5F5F5;
+  font-family: 'GSansBold';
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1170px) {  
+  #mainBody-checkout {
+    position: fixed;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: rgb(33, 40, 50, 0.4);
+    backdrop-filter: blur(170px);
+    bottom: -100%;
+    left: 0px;
+    color: white;
+    z-index: 100000;
+    opacity: 0.5;
+    transition: 0.5s;
+    user-select: none;
+  }
+  #head-title-checkout {
+    z-index: 1001;
+    font-family: 'GSansBlack';
+    font-size: 60px;
+    color: #F5F5F5;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 70px;
+    color: #F5F5F5;
+    width: 100%;
+    text-align: center;
+  }
+  #input-ZenID {
+    width: calc(20vw);
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(33, 40, 50, 0.6);
+    border: none;
+    padding-left: 15px;
+    color: #F5F5F5;
+    font-family: 'GSansMedium';
+    outline: none;
+    font-size: 19px;
+    margin-bottom: 10px
+  }
+  #input-Verif {
+    width: calc(20vw);
+    height: 45px;
+    border-radius: 10px;
+    background-color: rgb(33, 40, 50, 0.6);
+    border: none;
+    padding-left: 15px;
+    color: #F5F5F5;
+    font-family: 'GSansMedium';
+    outline: none;
+    font-size: 19px;
+  }
+  #getVerifCode {
+    width: 100px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    margin-left: -120px;
+    margin-top: 50px;
+    font-size: 21px;
+    color: #007AFF;
+    font-family: 'GSansMedium';
+    width: 120px
+  }
+
+  #userdata-input-download {
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #actionArea {
+    width: calc(20vw + 15px);
+    height: 50px;
+    background-color: rgb(33, 40, 50, 0);
+    margin-top: 70px
+  }
+
+  #actionArea-cancel {
+    width: calc(50% - 5px);
+    height: 50px;
+    background-color: #FF393D;
+    position: absolute;
+    border-radius: 10px;
+    left: 0px;
+    border: none;
+    color: #F5F5F5;
+    font-family: 'GSansBold';
+    font-size: 22px;
+    cursor: pointer
+  }
+  #actionArea-submit {
+    width: calc(50% - 5px);
+    height: 50px;
+    background-color: #007AFF;
+    position: absolute;
+    border-radius: 10px;
+    right: 0px;
+    border: none;
+    color: #F5F5F5;
+    font-family: 'GSansBold';
+    font-size: 22px;
+    cursor: pointer;
+  }
+}
