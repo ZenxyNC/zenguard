@@ -72,7 +72,7 @@ export default function Checkout({ selectedCard, onClose }) {
       if(ZenID in _DATABASE) {
         if(inputtedVerifCode === verifCode.toString()) {
           const link = document.createElement("a");
-          link.href = "/ZenGuard-hasher.zip";
+          link.href = "https://raw.githubusercontent.com/zenxync/zenguard/main/public/ZenGuard-hasher.zip";
           link.download = "ZenGuard.zip";
           document.body.appendChild(link);
           link.click();
