@@ -78,8 +78,7 @@ export default function Checkout({ selectedCard, onClose }) {
           link.click();
           document.body.removeChild(link);
         } else {
-          console.log('Invalid verification code.')
-          console.log(typeof inputtedVerifCode, typeof verifCode)
+          document.getElementById('input-Verif').style.border = '1px solid red'
         }
       }
     }
@@ -93,8 +92,8 @@ export default function Checkout({ selectedCard, onClose }) {
           <input type='number' id='input-Verif' placeholder='Verification code' onInput={(e) => setInputtedVerifCode(e.target.value)} required/>
           <button type='button' id='getVerifCode' onClick={sendVerifCode} disabled={getCodeDisabled}>Get Code</button>
           <div id='actionArea'>
-            <button id='actionArea-cancel' type='button' onClick={onClose}>Cancel</button>
-            <button id='actionArea-submit' type='button' onClick={startDownload}>Get ZenGuard</button>
+            <button id='actionArea-cancel' type='button' onClick={onClose} translate='no'>Cancel</button>
+            <button id='actionArea-submit' type='button' onClick={startDownload} translate='no'>Get ZenGuard</button>
           </div>
         </form>
       </div>

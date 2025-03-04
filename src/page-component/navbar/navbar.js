@@ -7,7 +7,6 @@ export default function Navbar() {
   const [menuOpened, setMenuOpened] = useState(false)
 
 
-
   function openNavigationMenu() {
     if(menuOpened) {
       document.getElementById('navbar-menu-mobile').style.top = '-50%';
@@ -27,8 +26,8 @@ export default function Navbar() {
     <>
       <div id="navbar-mainBody">
         <div id='navbar-innerWrapper'>
-          <img src={ZenGuard} alt="" id='navbar-image'></img>
-          <span id='navbar-initial'>ZenGuard</span>
+          <img src={ZenGuard} alt="" id='navbar-image' onClick={() => autoHref("Overview", "head-text")}></img>
+          <span id='navbar-initial' translate='no' onClick={() => autoHref("Overview", "head-text")}>ZenGuard</span>
           <div id='navbar-menu' onClick={openNavigationMenu}></div>
           <div id='navbar-menu-desktop'>
             {selectedMenu && 

@@ -46,7 +46,7 @@ export default function Download() {
           onClick={(e) => handleCardChange('Standard')}
           onKeyDown={(e) => handleCardChange('Standard')}
           >
-            <div className='cardPack-price'>
+            <div className='cardPack-price'  translate='no'>
               $35.0
             </div>
             <div className='cardPack-annual'>
@@ -65,7 +65,7 @@ export default function Download() {
           onClick={(e) => handleCardChange('Premium')}
           onKeyDown={(e) => handleCardChange('Premium')}
           >
-            <div className='cardPack-price'>
+            <div className='cardPack-price' translate='no'>
               $95.0
             </div>
             <div className='cardPack-annual'>
@@ -84,7 +84,7 @@ export default function Download() {
           onClick={(e) => handleCardChange('Professional')}
           onKeyDown={(e) => handleCardChange('Professional')}
           > 
-            <div className='cardPack-price'>
+            <div className='cardPack-price' translate='no'>
               $120.0
             </div>
             <div className='cardPack-annual'>
@@ -108,12 +108,12 @@ export default function Download() {
         </div>
       </div>
       <div className='--screen-viewported' id='checkout'>
-        <div id='head-title-download'>Check out.</div>
+        <div id='head-title-download' translate='no'>Check out.</div>
         <div id='head-desc'>*Double-click the card to checkout.</div>
         <div id='cardDetails-wrapper'>
           {selectedCard && 
             <div id='cardCO-std' className={`cardCO ${selectedCard === 'Standard' ? 'show' : 'hide'}`}>
-              <div className='cardPack-price'>
+              <div className='cardPack-price' translate='no'>
                 $35.0
               </div>
               <div className='cardPack-annual'>
@@ -129,7 +129,7 @@ export default function Download() {
           }
           {selectedCard && 
             <div id='cardCO-prem' className={`cardCO ${selectedCard === 'Premium' ? 'show' : 'hide'}`}>
-              <div className='cardPack-price'>
+              <div className='cardPack-price' translate='no'>
                 $95.0
               </div>
               <div className='cardPack-annual'>
@@ -145,7 +145,7 @@ export default function Download() {
           }
           {selectedCard && 
             <div id='cardCO-pro' className={`cardCO ${selectedCard === 'Professional' ? 'show' : 'hide'}`}>
-              <div className='cardPack-price'>
+              <div className='cardPack-price' translate='no'>
                 $120.0
               </div>
               <div className='cardPack-annual'>
@@ -171,14 +171,14 @@ export default function Download() {
             <br/><div className='--container-desc-extender'/>Using ZenGuard for the first time may be very confusing, feel free to see our usage manual.
           </div>
           <div id='itemCO-mobile'>
-            <button id='checkOut-mobile-button' onClick={(e) => setIsCheckout(true)}>
+            <button id='checkOut-mobile-button' onClick={(e) => setIsCheckout(true)} translate='no'>
               Check out
             </button>
             <button id='checkOut-mobile-info' onClick={handleInfoDisplay}>
               <div className='img'></div>
             </button>
           </div>
-          <div id='checkOut-hover' onDoubleClick={(e) => setIsCheckout(true)}>Double-click to Check Out.</div>
+          <div id='checkOut-hover' onDoubleClick={(e) => setIsCheckout(true)} translate='no'>Double-click to Check Out.</div>
           <div id='itemCO-title-desktop'>
             ZenGuard {selectedCard} Plan.
           </div>
