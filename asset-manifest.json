@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zenguard/static/css/main.9e569f73.css",
-    "main.js": "/zenguard/static/js/main.8c149489.js",
+    "main.css": "/zenguard/static/css/main.3e83998c.css",
+    "main.js": "/zenguard/static/js/main.3cab2f18.js",
     "static/js/563.741460e7.chunk.js": "/zenguard/static/js/563.741460e7.chunk.js",
     "static/media/ZenGuard.png": "/zenguard/static/media/ZenGuard.5e29f74c8717febe90df.png",
     "static/media/ProgressiveBlur.png": "/zenguard/static/media/ProgressiveBlur.12777b3e6c1ae127e2d0.png",
@@ -21,12 +21,12 @@
     "static/media/Card-Standard.svg": "/zenguard/static/media/Card-Standard.1558bab8f5c55f18320d.svg",
     "static/media/arrow.svg": "/zenguard/static/media/arrow.c071a1f18d8d36a0a90c064198a316d1.svg",
     "static/media/menu-dot.svg": "/zenguard/static/media/menu-dot.bd47c38e50a4857db207.svg",
-    "main.9e569f73.css.map": "/zenguard/static/css/main.9e569f73.css.map",
-    "main.8c149489.js.map": "/zenguard/static/js/main.8c149489.js.map",
+    "main.3e83998c.css.map": "/zenguard/static/css/main.3e83998c.css.map",
+    "main.3cab2f18.js.map": "/zenguard/static/js/main.3cab2f18.js.map",
     "563.741460e7.chunk.js.map": "/zenguard/static/js/563.741460e7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e569f73.css",
-    "static/js/main.8c149489.js"
+    "static/css/main.3e83998c.css",
+    "static/js/main.3cab2f18.js"
   ]
 }
