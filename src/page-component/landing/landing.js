@@ -29,7 +29,7 @@ export default function Landing() {
         ZenGuard.
       </div>
       <div id='head-description'>
-        ZenGuard, a protection protocol for our ecosystem. Explore the latest security technology with ZenGuard. Being protected in seamless.
+        ZenGuard, a protection protocol for our ecosystem. Explore the latest security technology and secure your information seamlessly with ZenGuard. Being protected in seamless by ZenGuard.
       </div>
       <img src={arrow} alt='' id='arrow-desktop'></img>
       <div id='mainContent'>
