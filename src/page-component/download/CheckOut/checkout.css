@@ -1,3 +1,6 @@
+html {
+  scrollbar-gutter: stable;
+}
 
 #mainBody-checkout {
   position: fixed;

@@ -10,7 +10,7 @@ export default function App() {
     <Router basename="/zenguard">
       <Routes>
         <Route path="/*" element={<Landing />} />
-        <Route path="/zenguard/download" element={<Download />} />
+        <Route path="/download/" element={<Download />} />
       </Routes>
     </Router>
   )

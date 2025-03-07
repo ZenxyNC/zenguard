@@ -51,7 +51,7 @@ export default function Landing() {
               Use ZenGuard as your software security protocol. Seamless protection with great experience and performance.
             </div>
             <div className='--container-date' style={{color: 'rgb(0, 122, 255, 0.5)', fontSize: '16px'}}>*Paid feature.</div>
-            <button className='--container-button --Installation-button' onClick={() => redirect('/zenguard/download')}>Download</button>
+            <button className='--container-button --Installation-button' onClick={() => redirect('/download/')}>Download</button>
           </div>
           <div className='--container Utilities-component' id='tutorial'>
             <div className='--container-title' style={{width: '70%'}}>Learn ZenGuard.</div>
