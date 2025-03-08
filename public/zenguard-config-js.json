@@ -1,0 +1,8 @@
+{
+  "name" : "ZenGuard Protocol",
+  "version" : "1.0.2.0",
+  "development" : "RELEASE",
+  "engine_version" : "1.0.3.0",
+  "engine_type" : "module",
+  "engine_context" : "JavaScript"
+}
