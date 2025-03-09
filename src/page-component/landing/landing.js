@@ -35,8 +35,10 @@ export default function Landing() {
       <div id='mainContent'>
         <div className='--container' id='LatestFromUs'>
           <div className='--container-title'>Latest from us.</div>
-          <div className='--container-date'>February 11, 2024</div>
-          <div className='--container-description'>Identity information leaks. Over a billion people’s identity has leaked and being an object to sell in Dark Web. This information including Family tree, Email and phone number, even Bank information.<br/><div className='--container-desc-extender'/>ZenGuard has noticed this and did an update to prevent unwanted things. The update is renewing authentication system and inter-login system.<br/><div className='--container-desc-extender'/>Keep your data safe out there. Don’t worry, ZenGuard could help you with this.</div>
+          <div className='--container-date'>March 09, 2025</div>
+          <div className='--container-description'>
+          The newest version of ZenGuard just released. In this version (1.2.3.0-RELEASE)  we bring a bunch of improvement.<br/><div className='--container-desc-extender'/>First thing first, we’ve updated the ZenGuard security. This security update will not let you use old, unsecure, and unoriginal ZenGuard version. So, don’t forget to update your ZenGuard and make sure you use the original one.<br/><div className='--container-desc-extender'/>Also, we bring some improvement to developer experience. We added return value response for easier debugging and management. Not just that, ZenGuard is now easier to use. One command doing all the function!
+          </div>
         </div>
         <div className='--container' id='ZenGuard-Invitation'>
           <div className='--container-title'>Be a part of ZenGuard.</div>
