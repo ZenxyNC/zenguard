@@ -71,7 +71,7 @@ export default function Checkout({ selectedCard, onClose }) {
     if(ZenID) {
       if(ZenID in _DATABASE) {
         if(inputtedVerifCode === verifCode.toString()) {
-          const fileID = "ZenGuard-1.2.3.0-RELEASE.zip"
+          const fileID = "ZenGuard-1.3.3.1-RELEASE.zip"
           const link = document.createElement("a");
           link.href = `https://raw.githubusercontent.com/zenxync/zenguard/main/public/${fileID}`;
           link.download = fileID;

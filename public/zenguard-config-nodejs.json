@@ -1,9 +1,9 @@
 
 {
   "name" : "ZenGuard Protocol",
-  "version" : "1.2.3.0",
+  "version" : "1.3.3.1",
   "development" : "RELEASE",
-  "engine_version" : "1.2.4.0",
+  "engine_version" : "1.3.4.1",
   "engine_type" : "module",
   "engine_context" : "NodeJS"
 }
