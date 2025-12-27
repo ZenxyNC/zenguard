@@ -32,7 +32,9 @@ export default function Landing() {
           <p id="landing-description">
             ZenGuard, ZenEcosystem main security protocol. Explore the latest security technology and secure your information seamlessly with ZenGuard. Being protected in seamless by ZenGuard.
           </p>
-          <LandingButton>
+          <LandingButton
+            navigation="#landing-body"
+          >
             Explore
           </LandingButton>
         </div>
@@ -40,13 +42,13 @@ export default function Landing() {
       <div id="landing-body">
         <ContainerLarge isParent={false}>
           <ContainerTitle>Latest From Us</ContainerTitle>
-          <ContainerDate>March 09, 2025</ContainerDate>
+          <ContainerDate>December 27, 2025</ContainerDate>
           <ContainerContent>
-            The newest version of ZenGuard just released. In this version (1.3.3.1-RELEASE) we bring a lot of improvement.<br/>
+          The one who hibernating for a long time, has now woken up. The redefined version of ZenGuard. Introducing <span className="gradient">ZenGuard v2.0.0</span>.<br/>
             <br/>
-            First thing first, we’ve updated the ZenGuard security. This security update will not let you use old, unsecure, and unoriginal ZenGuard version. So, don’t forget to update your ZenGuard and make sure you use the original one.<br/>
+            Improvement for everyone. Developers? Users? Both! ZenGuard has a major upgrade up to 20% better than before. The code refactor will absolutely loved by developers. We consistently keep ZenGuard's vision, "Easy and Seamless Security For Everyone".<br/>
             <br/>
-            Also, we bring some improvement to developer experience. We added return value response for easier debugging and management. Not just that, ZenGuard is now easier to use. One command doing all the function!
+            Talking about ease of use and scale, we upgraded it into <span className="gradient">ZenGuard For Developer</span>. Designed perfectly for developers, with only 2 lines of code to do all the job.
           </ContainerContent>
         </ContainerLarge>
 

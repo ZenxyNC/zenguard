@@ -2,7 +2,7 @@
   "homepage": "https://zenxync.github.io/zenguard/",
   "name": "zenguard",
   "private": true,
-  "version": "2.0.0-beta.1",
+  "version": "2.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",

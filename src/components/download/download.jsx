@@ -32,7 +32,7 @@ export default function Download() {
           reverse={false}
           duration={1.2}
           ease="power3.out"
-          initialOpacity={1}
+          initialOpacity={0}
           animateOpacity
           scale={1}
           threshold={0.2}
@@ -58,6 +58,7 @@ export default function Download() {
                 <LandingButton
                   navigation=""
                   className={"download-button"}
+                  downloadurl="https://github.com/ZenxyNC/zenguard/archive/refs/tags/v2.0.0.zip"
                 >
                   Download
                 </LandingButton>

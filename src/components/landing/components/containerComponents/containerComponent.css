@@ -26,6 +26,14 @@
   position: relative
 }
 
+#containerbox-content .gradient {
+  font-family: _bold;
+  background: linear-gradient(90deg, var(--primary) 0%, var(--secondary) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 #ourMission-img {
   width: 120%;
   max-width: 400px;

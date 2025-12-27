@@ -31,6 +31,8 @@ html, body {
   background-color: var(--background);
   color: var(--color);
   font-family: _regular;
+
+  scroll-behavior: smooth;
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
