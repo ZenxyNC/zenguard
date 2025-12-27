@@ -1,0 +1,97 @@
+#containerbox-title {
+  font-family: _bold;
+  font-size: 32px;
+  background: linear-gradient(105.958deg, #007AFF 0%, #4E22E0 40%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#containerbox-date {
+  font-family: _semibold;
+  font-size: 16px;
+  color: var(--color2);
+}
+
+#containerbox-content {
+  font-family: _regular;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.5px;
+
+  margin-top: 16px;
+
+  z-index: 5;
+
+  position: relative
+}
+
+#ourMission-img {
+  width: 120%;
+  max-width: 400px;
+
+  position: absolute;
+  right: -120px;
+  bottom: -100px;
+
+  z-index: -10
+}
+
+.docs-button {
+  width: 160px !important;
+  font-size: 16px !important;
+
+  background-color: var(--color) !important;
+  color: var(--background) !important;
+}
+
+@media screen and (min-width: 834px) {
+  #containerbox-title {
+    font-family: _bold;
+    font-size: 36px;
+    background: linear-gradient(105.958deg, #007AFF 0%, #4E22E0 40%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .ourMission-content {
+    width: calc(100% - min(220px, 100%))
+  }
+
+  #ourMission-img {
+    width: 100%;
+    max-width: 400px;
+
+    position: absolute;
+    right: -120px;
+    bottom: -100px;
+
+    z-index: -10
+  }
+  #containerbox-content {
+    font-family: _regular;
+    font-size: clamp(16px, 2vw, 20px);
+    line-height: 24px;
+    letter-spacing: 0.5px;
+
+    margin-top: 16px;
+
+    z-index: 5;
+
+    position: relative
+  }
+
+  .ourMission-button {
+    width: 160px !important;
+    font-size: 16px !important;
+  }
+
+  .docs-button {
+    width: 160px !important;
+    font-size: 16px !important;
+
+    background-color: var(--color) !important;
+    color: var(--background) !important;
+  }
+}

@@ -1,0 +1,104 @@
+#containerbox-small {
+  width: calc(100% - 56px - 2px);
+  height: max-content;
+  min-height: 200px;
+
+  border: 1px solid var(--border);
+  border-radius: 30px;
+
+  padding: 28px;
+  padding-top: 20px;
+
+  overflow: hidden;
+
+  position: relative;
+}
+
+#containerbox-large {
+  width: calc(100% - 56px - 56px - 2px) /*100% - Margin left and right - padding left and right - border left and right*/;
+  max-width: 600px;
+  height: max-content;
+  min-height: 100px;
+
+  border-radius: 30px;
+  border: 1px solid var(--border);
+
+  background-color: var(--background);
+
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 28px;
+  padding-top: 20px;
+  margin-bottom: 28px;
+
+  overflow: hidden
+}
+
+#containerbox-large.isParent {
+  width: calc(100% - 56px) /*100% - Margin left and right*/;
+  max-width: calc(600px + 56px) /*600px + Ghost Padding left and right*/;
+
+  border: none;
+
+  padding: 0;
+  padding-top: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 28px
+}
+
+
+@media screen and (min-width: 834px) {
+  #containerbox-small {
+    width: calc(100% - 2px);
+    aspect-ratio: 1/1;
+    height: max-content;
+    min-height: 200px;
+
+    border: 1px solid var(--border);
+    border-radius: 40px;
+
+    padding: 28px;
+    padding-top: 20px;
+
+    overflow: hidden;
+
+    position: relative;
+  }
+
+  #containerbox-large {
+    width: calc(100dvw - 56px - 56px - 2px) /*100% - Margin left and right - padding left and right - border left and right*/;
+    max-width: 652px;
+    height: max-content;
+    min-height: 100px;
+
+    border-radius: 40px;
+    border: 1px solid var(--border);
+
+    background-color: var(--background);
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+
+    padding: 28px;
+    padding-top: 20px
+  }
+
+  #containerbox-large.isParent {
+    width: calc(100dvw - 56px) /*100% - Margin left and right*/;
+    max-width: calc(652px + 56px) /*652px + Ghost Padding left and right*/;
+
+    border: none;
+
+    padding: 0;
+    padding-top: 0;
+
+    display: flex;
+    flex-direction: row;
+    gap: 28px
+  }
+}

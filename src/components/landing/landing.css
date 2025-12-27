@@ -1,0 +1,142 @@
+#landing-mainbody {
+  width: 100dvw;
+  height: max-content;
+  min-height: 100dvh;
+}
+
+
+#landing-dotted {
+  width: 100%;
+  height: 100%;
+
+  background-image: url('/resources/background/dotted.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  z-index: 0
+}
+
+#landing-headerText {
+  width: 100dvw;
+  overflow-x: hidden;
+  background-color: transparent;
+
+  z-index: 1;
+
+  position: absolute;
+  top: 108px
+}
+
+#landing-headerText p{
+  width: 270dvw;
+  height: max-content;
+  max-width: 1400px;
+
+  font-family: _semibold;
+  font-size: 20px;
+
+  color: var(--color2);
+
+  position: relative;
+  left: -30dvw
+}
+
+#landing-headerText p span {
+  color: var(--color3);
+  font-family: _bold;
+}
+
+#landing-content {
+  width: calc(100dvw - 56px);
+  height: max-content;
+
+  position: absolute;
+  top: 270px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px
+}
+
+#landing-title {
+  font-family: _extrabold;
+  font-size: 52px;
+  background: linear-gradient(90deg, #007AFF 0%, #4E22E0 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#landing-description {
+  font-family: _regular;
+  font-size: 16px;
+  text-align: center;
+}
+
+#landing-button {
+  width: 160px;
+  height: 40px;
+
+  border-radius: 30px;
+  border: 1px solid var(--border);
+
+  background-color: var(--button);
+  backdrop-filter: blur(var(--button-blur));
+
+  color: var(--color);
+  font-family: _bold;
+  font-size: 16px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease-in-out;
+
+  margin-top: 16px;
+}
+
+#landing-button:active {
+  scale: 0.92;
+}
+
+@media (min-width: 834px) {
+  #landing-headerText {
+    top: 90px;
+  }
+
+
+  #landing-headerText p{
+    width: 105dvw;
+    height: max-content;
+    max-width: unset;
+
+    font-family: _semibold;
+    font-size: 28px;
+
+    color: var(--color2);
+
+    left: unset
+  }
+
+  #landing-content {
+    width: clamp(450px, 28dvw, 550px)
+  }
+
+  #landing-title {
+    font-size: clamp(64px, 4vw, 76px);
+  }
+
+  #landing-description {
+    font-size: clamp(16px, 2vw, 20px);
+    font-family: _medium;
+  }
+
+  #landing-button {
+    width: 200px;
+    height: 46px;
+
+    font-size: 20px;
+  }
+}

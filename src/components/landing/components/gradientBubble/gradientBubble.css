@@ -1,0 +1,11 @@
+#gradientBubble {
+  width: var(--gradient-bubble-size);
+  height: var(--gradient-bubble-size);
+
+  border-radius: 500px;
+
+  position: absolute;
+  z-index: -10;
+
+  filter: auto;
+}

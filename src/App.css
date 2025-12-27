@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 1
+}
+
+:root {
+  --background: #0F131A;
+  --background2: rgb(15, 19, 26, 0.4);
+  --navbar-background: rgb(15, 19, 26, 0.6);
+  --color: #F5F5F5;
+  --color2: rgb(245, 245, 245, 0.3);
+  --color3: rgb(245, 245, 245, 0.6);
+  --button: rgb(15, 19, 26, 0.2);
+  --border: rgb(245, 245, 245, 0.3);
+  --primary: #007aff;
+  --secondary: #4E22E0;
+  --shadow: rgb(15, 19, 26, 0.5);
+
+  --navbar-blur: 40px;
+  --button-blur: 12px;
+  --bubble-blur: 80px;
+  --download-bubble-blur: 160px;
+
+  --100dvw: 100dvw;
+  --150dvw: 150dvw;
+  --gradient-bubble-size: 200px;
+}
+
+html, body {
+  background-color: var(--background);
+  color: var(--color);
+  font-family: _regular;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none
+}
