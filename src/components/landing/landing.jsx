@@ -2,6 +2,7 @@ import Navbar from "../navbar/navbar";
 import Aurora from "./aurora/aurora";
 import "./landing.css";
 import "./landing-body.css";
+import logoBlur from "../../resources/icons/ZenGuard_blur.png"
 import { ContainerLarge, ContainerSmall } from "./components/containerbox/containerbox";
 import { ContainerContent, ContainerDate, ContainerTitle } from "./components/containerComponents/containerComponents";
 import LandingButton from "./components/landingButton/landingButton";
@@ -61,7 +62,7 @@ export default function Landing() {
             <br/>
             Need to mention, for security reason, ZenGuard For Developer and the one used in ZenEcosystem has different algorithm, but it works the same.
           </ContainerContent>
-          <img src="/resources/icons/ZenGuard_blur.png" alt="" id="ourMission-img"/>
+          <img src={logoBlur} alt="" id="ourMission-img"/>
         </ContainerLarge>
 
         <ContainerLarge 
