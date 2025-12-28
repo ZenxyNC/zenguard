@@ -6,7 +6,7 @@ import Download from "./components/download/download.jsx";
 
 export default function App() {
   return (
-    <Router basename="/zenguard">
+    <Router basename="/zenguard/">
       <Routes>
         <Route path="/" element={<Landing />} />
         <Route path="/zenguard-for-developer" element={<Download />} />
