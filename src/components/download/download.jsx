@@ -64,7 +64,7 @@ export default function Download() {
                 </LandingButton>
                 <LandingButton 
                   className={"docs-button download-button"}
-                  navigation=""
+                  navigation="https://zenxync.github.io/zendocs/docs/zenguard"
                 >
                   Learn More
                 </LandingButton>

@@ -7,12 +7,12 @@ export default function LandingButton({ children, className, navigation, downloa
   const handleClick = () => {
     if (downloadurl) {
       window.open(downloadurl, '_blank');
+    } else if(navigation.includes("#")) {
+      window.location.href = navigation;
+    } else if (navigation.includes("http")) {
+      window.open(navigation, '_blank');
     } else {
-      if(navigation.includes("#")) {
-        window.location.href = navigation;
-      } else {
-        navigate(navigation);
-      }
+      navigate(navigation);
     }
   }
 

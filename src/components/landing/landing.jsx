@@ -99,7 +99,7 @@ export default function Landing() {
             </ContainerContent>
             <LandingButton 
               className={"docs-button"}
-              navigation=""
+              navigation="https://zenxync.github.io/zendocs/docs/zenguard"
             >
               Learn More
             </LandingButton>
